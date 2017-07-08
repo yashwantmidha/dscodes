@@ -1,0 +1,20 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+double pi=(sqrt(5) - 1 ) / 2;
+
+int fibonacci(int n) {
+
+    double fib = (pow( pi , n) - pow( -pi , -n ))/ sqrt(5);
+    
+    int k=round(fib);
+    
+    return k;
+}
+int main() {
+    int n;
+    cin >> n;
+    cout << fibonacci(n);
+    return 0;
+}
